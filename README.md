@@ -13,11 +13,11 @@ Mask RCNN with double fpn and k-means anchors(not yolo version)
 - 将单向fpn扩展为双向
 - 加入 Group Normalization （BN在小batchsize上效果不好）
 - 增加imgaug数据增强方式
-- 采用VEDAI小目标航拍数据集，完美转COCO格式，可以利用COCO评价指标评估小目标检测效果
+- 采用[VEDAI](https://drive.google.com/drive/folders/1DTYirYANbvNNkNylhawpfq4j6n1db0X0?usp=sharing)小目标航拍数据集，完美转COCO格式，可以利用COCO评价指标评估小目标检测效果
 
 ## 食用方法
 
-大致方法参考[matterport]([matterport/Mask_RCNN: Mask R-CNN for object detection and instance segmentation on Keras and TensorFlow (github.com)](https://github.com/matterport/Mask_RCNN)) 作者版本的Mask-RCNN源码，双向特征金字塔的改动主要集中在\MRCNN_with_DFPN\mrcnn\model.py文件中。[DFPNwA.ipynb](https://github.com/chikacya/MRCNN_with_DFPN/blob/master/DFPNwA.ipynb)文件可以用作Google Colab当中进行训练和测试。
+大致方法参考[matterport](https://github.com/matterport/Mask_RCNN)作者版本的Mask-RCNN源码，双向特征金字塔的改动主要集中在\MRCNN_with_DFPN\mrcnn\model.py文件中。[DFPNwA.ipynb](https://github.com/chikacya/MRCNN_with_DFPN/blob/master/DFPNwA.ipynb)文件可以用作Google Colab当中进行训练和测试。
 
 [权重weight文件](https://drive.google.com/drive/folders/1YYBSTSKMyzsTaEyQ4JU85WhIbcwGYufv?usp=sharing)：mask_rcnn_coco_0200.h5代表原始Mask-RCNN训练VEDAI数据集后的权重
 
